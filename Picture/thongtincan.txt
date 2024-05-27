@@ -1,0 +1,4 @@
+chiều ngang, cao =1400, 850
+chữ thường : 14
+tiều đề: 18
+chữ nhỏ: 12
