@@ -79,7 +79,7 @@ namespace QuanLyPhongTro_10122399.Folder_PhieuThu
                 if (!row.IsNewRow) // Đảm bảo không duyệt qua hàng mới
                 {
                     // Lấy giá trị từ cột đầu tiên của mỗi hàng
-                    PhieuThu ctpt = new PhieuThu(txtMaThu, row.Cells[0].Value.ToString(), row.Cells[1].Value.ToString());
+                    PhieuThu ctpt = new PhieuThu(txtMaThu, row.Cells[0].Value.ToString(), row.Cells[2].Value.ToString());
                     ptbll.themCTPT(ctpt);
                     // làm điều gì đó với giá trị cellValue ở đây
                 }
@@ -151,7 +151,7 @@ namespace QuanLyPhongTro_10122399.Folder_PhieuThu
                 MessageBox.Show("Vui lòng nhập đúng số lượng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                string dichVuMoi = cmbMaDV.SelectedItem.ToString();
+                string dichVuMoi = cmbMaDV.SelectedItem.ToString().Split('-')[0];
                 int soLuong = int.Parse(txtSoLuong.Texts);
 
                 bool found = false;
@@ -172,7 +172,7 @@ namespace QuanLyPhongTro_10122399.Folder_PhieuThu
                 if (!found)
                 {
                     // Nếu mã sản phẩm chưa tồn tại, thêm vào dgvCTDV
-                    dgvCTDV.Rows.Add(cmbMaDV.SelectedItem, txtSoLuong.Texts);
+                    dgvCTDV.Rows.Add(cmbMaDV.SelectedItem.ToString().Split('-')[0], cmbMaDV.SelectedItem.ToString().Split('-')[1], txtSoLuong.Texts);
                 }
             }
         }

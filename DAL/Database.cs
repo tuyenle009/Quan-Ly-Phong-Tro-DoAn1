@@ -117,13 +117,14 @@ namespace DAL
         {
             MoKetNoi();
             List<string> dsDV = new List<string>(); //khoi tao ds chua makt
-            SqlCommand sqlCmd = new SqlCommand("select madv from DichVu", sqlCon);
+            SqlCommand sqlCmd = new SqlCommand("select madv, tendv from DichVu", sqlCon);
 
             SqlDataReader reader = sqlCmd.ExecuteReader();
             while (reader.Read())
             {
                 string makt = reader.GetString(0);
-                dsDV.Add(makt);
+                string tendv = reader.GetString(1);
+                dsDV.Add(makt.Trim()+" - "+tendv.Trim());
             }
             reader.Close();
             DongKetNoi();

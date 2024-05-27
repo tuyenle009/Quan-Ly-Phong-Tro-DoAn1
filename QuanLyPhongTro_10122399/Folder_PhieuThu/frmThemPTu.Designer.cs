@@ -56,8 +56,6 @@
             this.cmbMaDV = new System.Windows.Forms.ComboBox();
             this.btnThemCTPT = new QuanLyPhongTro_10122399.RJButton();
             this.dgvCTDV = new System.Windows.Forms.DataGridView();
-            this.maDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSoLuong = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.rjTextBox2 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
@@ -66,6 +64,9 @@
             this.xoaHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnThemPThu = new QuanLyPhongTro_10122399.RJButton();
             this.btnThoat = new QuanLyPhongTro_10122399.RJButton();
+            this.maDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlPhieuThu.SuspendLayout();
             this.pnlCTPhieuThu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTDV)).BeginInit();
@@ -428,9 +429,9 @@
             this.cmbMaDV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbMaDV.Font = new System.Drawing.Font("Quicksand", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaDV.FormattingEnabled = true;
-            this.cmbMaDV.Location = new System.Drawing.Point(66, 67);
+            this.cmbMaDV.Location = new System.Drawing.Point(41, 67);
             this.cmbMaDV.Name = "cmbMaDV";
-            this.cmbMaDV.Size = new System.Drawing.Size(145, 31);
+            this.cmbMaDV.Size = new System.Drawing.Size(170, 31);
             this.cmbMaDV.TabIndex = 136;
             this.cmbMaDV.SelectedIndexChanged += new System.EventHandler(this.cmbMaDV_SelectedIndexChanged);
             // 
@@ -461,6 +462,7 @@
             this.dgvCTDV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCTDV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maDV,
+            this.tenDV,
             this.soLuong});
             this.dgvCTDV.Location = new System.Drawing.Point(289, 29);
             this.dgvCTDV.Name = "dgvCTDV";
@@ -473,24 +475,6 @@
             this.dgvCTDV.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dgvCTDV_RowPrePaint);
             this.dgvCTDV.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dgvCTDV_MouseClick);
             // 
-            // maDV
-            // 
-            this.maDV.DataPropertyName = "maDV";
-            this.maDV.HeaderText = "Mã dịch vụ";
-            this.maDV.MinimumWidth = 6;
-            this.maDV.Name = "maDV";
-            this.maDV.ReadOnly = true;
-            this.maDV.Width = 210;
-            // 
-            // soLuong
-            // 
-            this.soLuong.DataPropertyName = "soLuong";
-            this.soLuong.HeaderText = "Số lượng";
-            this.soLuong.MinimumWidth = 6;
-            this.soLuong.Name = "soLuong";
-            this.soLuong.ReadOnly = true;
-            this.soLuong.Width = 240;
-            // 
             // txtSoLuong
             // 
             this.txtSoLuong.BackColor = System.Drawing.Color.White;
@@ -499,7 +483,7 @@
             this.txtSoLuong.BorderRadius = 20;
             this.txtSoLuong.BorderSize = 2;
             this.txtSoLuong.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(51, 162);
+            this.txtSoLuong.Location = new System.Drawing.Point(26, 162);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
             this.txtSoLuong.Multiline = false;
             this.txtSoLuong.Name = "txtSoLuong";
@@ -507,7 +491,7 @@
             this.txtSoLuong.PasswordChar = false;
             this.txtSoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtSoLuong.PlaceholderText = "";
-            this.txtSoLuong.Size = new System.Drawing.Size(179, 39);
+            this.txtSoLuong.Size = new System.Drawing.Size(204, 39);
             this.txtSoLuong.TabIndex = 133;
             this.txtSoLuong.Texts = "0";
             this.txtSoLuong.UnderlinedStyle = false;
@@ -534,7 +518,7 @@
             this.rjTextBox2.BorderSize = 2;
             this.rjTextBox2.Font = new System.Drawing.Font("Quicksand Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rjTextBox2.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox2.Location = new System.Drawing.Point(51, 63);
+            this.rjTextBox2.Location = new System.Drawing.Point(26, 63);
             this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.rjTextBox2.Multiline = false;
             this.rjTextBox2.Name = "rjTextBox2";
@@ -542,7 +526,7 @@
             this.rjTextBox2.PasswordChar = false;
             this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.Size = new System.Drawing.Size(179, 39);
+            this.rjTextBox2.Size = new System.Drawing.Size(204, 39);
             this.rjTextBox2.TabIndex = 131;
             this.rjTextBox2.Texts = "";
             this.rjTextBox2.UnderlinedStyle = false;
@@ -618,6 +602,32 @@
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click_1);
             // 
+            // maDV
+            // 
+            this.maDV.DataPropertyName = "maDV";
+            this.maDV.HeaderText = "Mã dịch vụ";
+            this.maDV.MinimumWidth = 6;
+            this.maDV.Name = "maDV";
+            this.maDV.ReadOnly = true;
+            this.maDV.Width = 150;
+            // 
+            // tenDV
+            // 
+            this.tenDV.DataPropertyName = "tenDV";
+            this.tenDV.HeaderText = "Tên dịch vụ";
+            this.tenDV.Name = "tenDV";
+            this.tenDV.ReadOnly = true;
+            this.tenDV.Width = 150;
+            // 
+            // soLuong
+            // 
+            this.soLuong.DataPropertyName = "soLuong";
+            this.soLuong.HeaderText = "Số lượng";
+            this.soLuong.MinimumWidth = 6;
+            this.soLuong.Name = "soLuong";
+            this.soLuong.ReadOnly = true;
+            this.soLuong.Width = 150;
+            // 
             // frmThemPTu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 19F);
@@ -654,8 +664,6 @@
         private System.Windows.Forms.DateTimePicker dtpNgayThu;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem xoaHangToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maDV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
         private System.Windows.Forms.ComboBox cmbMaDV;
         private RJButton btnThemCTPT;
         private RJControls.RJTextBox txtSoLuong;
@@ -682,5 +690,8 @@
         private System.Windows.Forms.Label lblThanhToan;
         private System.Windows.Forms.Label label1;
         private RJControls.RJTextBox txtNoCu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maDV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenDV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
     }
 }

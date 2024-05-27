@@ -131,7 +131,7 @@ namespace QuanLyPhongTro_10122399.Folder_PhieuThu
                 MessageBox.Show("Vui lòng nhập đúng số lượng!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             else
             {
-                string dichVuMoi = cmbMaDV.SelectedItem.ToString();
+                string dichVuMoi = cmbMaDV.SelectedItem.ToString().Split('-')[0];
                 int soLuong = int.Parse(txtSoLuong.Texts);
 
                 bool found = false;
@@ -139,7 +139,7 @@ namespace QuanLyPhongTro_10122399.Folder_PhieuThu
                 // Duyệt qua từng dòng trong dgvCTDV để kiểm tra mã sản phẩm
                 foreach (DataGridViewRow row in dgvCTDV.Rows)
                 {
-                    if (row.Cells["maDV"].Value != null && row.Cells["maDV"].Value.ToString() == dichVuMoi)
+                    if (row.Cells["maDV"].Value != null && row.Cells["maDV"].Value.ToString().Trim() == dichVuMoi.Trim())
                     {
                         // Mã sản phẩm đã tồn tại, cộng thêm vào lượng sản phẩm
                         int slHienTai = int.Parse(row.Cells["soLuong"].Value.ToString());
@@ -152,7 +152,7 @@ namespace QuanLyPhongTro_10122399.Folder_PhieuThu
                 if (!found)
                 {
                     // Nếu mã sản phẩm chưa tồn tại, thêm vào dgvCTDV
-                    dgvCTDV.Rows.Add(cmbMaDV.SelectedItem, txtSoLuong.Texts);
+                    dgvCTDV.Rows.Add(cmbMaDV.SelectedItem.ToString().Split('-')[0], txtSoLuong.Texts);
                 }
             }
         }

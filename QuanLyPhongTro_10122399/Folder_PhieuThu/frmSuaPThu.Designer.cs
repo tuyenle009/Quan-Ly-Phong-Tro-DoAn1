@@ -30,57 +30,48 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSuaPThu));
-            this.maDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmbMaPT = new System.Windows.Forms.ComboBox();
             this.dtpNgayThu = new System.Windows.Forms.DateTimePicker();
             this.lblChiTiet = new System.Windows.Forms.Label();
             this.lblGiaPhong = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.xoaHangToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblCMND = new System.Windows.Forms.Label();
             this.cmbMaDV = new System.Windows.Forms.ComboBox();
             this.pnlCTPhieuThu = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnThemCTPT = new QuanLyPhongTro_10122399.RJButton();
             this.dgvCTDV = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.txtSoLuong = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
-            this.rjTextBox2 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.lblThanhToan = new System.Windows.Forms.Label();
             this.lblThongTinPT = new System.Windows.Forms.Label();
             this.pnlPhieuThu = new System.Windows.Forms.Panel();
+            this.lblNoCu = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblGiaNuoc = new System.Windows.Forms.Label();
-            this.rjTextBox3 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.lblGiaDien = new System.Windows.Forms.Label();
-            this.rjTextBox1 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.lblMaPThu = new System.Windows.Forms.Label();
+            this.btnThemCTPT = new QuanLyPhongTro_10122399.RJButton();
+            this.txtSoLuong = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
+            this.rjTextBox2 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
+            this.txtNoCu = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
+            this.rjTextBox3 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
+            this.rjTextBox1 = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.txtGiaPhong = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.txtNgayThu = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.btnCapNhatPThu = new QuanLyPhongTro_10122399.RJButton();
             this.txtThanhToan = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
             this.btnThoat = new QuanLyPhongTro_10122399.RJButton();
             this.txtMaPT = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
-            this.lblNoCu = new System.Windows.Forms.Label();
-            this.txtNoCu = new QuanLyPhongTro_10122399.RJControls.RJTextBox();
+            this.soLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maDV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlCTPhieuThu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCTDV)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.pnlPhieuThu.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // maDV
-            // 
-            this.maDV.DataPropertyName = "maDV";
-            this.maDV.HeaderText = "Mã dịch vụ";
-            this.maDV.MinimumWidth = 6;
-            this.maDV.Name = "maDV";
-            this.maDV.ReadOnly = true;
-            this.maDV.Width = 210;
             // 
             // cmbMaPT
             // 
@@ -152,15 +143,6 @@
             this.label2.TabIndex = 132;
             this.label2.Text = "Mã Dịch vụ";
             // 
-            // soLuong
-            // 
-            this.soLuong.DataPropertyName = "soLuong";
-            this.soLuong.HeaderText = "Số lượng";
-            this.soLuong.MinimumWidth = 6;
-            this.soLuong.Name = "soLuong";
-            this.soLuong.ReadOnly = true;
-            this.soLuong.Width = 240;
-            // 
             // xoaHangToolStripMenuItem
             // 
             this.xoaHangToolStripMenuItem.Name = "xoaHangToolStripMenuItem";
@@ -223,27 +205,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(87, 310);
             this.flowLayoutPanel1.TabIndex = 141;
             // 
-            // btnThemCTPT
-            // 
-            this.btnThemCTPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(193)))), ((int)(((byte)(195)))));
-            this.btnThemCTPT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(193)))), ((int)(((byte)(195)))));
-            this.btnThemCTPT.BorderColor = System.Drawing.Color.White;
-            this.btnThemCTPT.BorderRadius = 20;
-            this.btnThemCTPT.BorderSize = 1;
-            this.btnThemCTPT.FlatAppearance.BorderSize = 0;
-            this.btnThemCTPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemCTPT.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemCTPT.ForeColor = System.Drawing.Color.White;
-            this.btnThemCTPT.Image = ((System.Drawing.Image)(resources.GetObject("btnThemCTPT.Image")));
-            this.btnThemCTPT.Location = new System.Drawing.Point(57, 234);
-            this.btnThemCTPT.Name = "btnThemCTPT";
-            this.btnThemCTPT.Size = new System.Drawing.Size(160, 58);
-            this.btnThemCTPT.TabIndex = 131;
-            this.btnThemCTPT.Text = "THÊM";
-            this.btnThemCTPT.TextColor = System.Drawing.Color.White;
-            this.btnThemCTPT.UseVisualStyleBackColor = false;
-            this.btnThemCTPT.Click += new System.EventHandler(this.btnThemCTPT_Click);
-            // 
             // dgvCTDV
             // 
             this.dgvCTDV.AllowUserToAddRows = false;
@@ -271,49 +232,6 @@
             this.xoaHangToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(125, 26);
-            // 
-            // txtSoLuong
-            // 
-            this.txtSoLuong.BackColor = System.Drawing.Color.White;
-            this.txtSoLuong.BorderColor = System.Drawing.Color.SaddleBrown;
-            this.txtSoLuong.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtSoLuong.BorderRadius = 20;
-            this.txtSoLuong.BorderSize = 2;
-            this.txtSoLuong.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSoLuong.Location = new System.Drawing.Point(47, 162);
-            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSoLuong.Multiline = false;
-            this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSoLuong.PasswordChar = false;
-            this.txtSoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSoLuong.PlaceholderText = "";
-            this.txtSoLuong.Size = new System.Drawing.Size(179, 39);
-            this.txtSoLuong.TabIndex = 133;
-            this.txtSoLuong.Texts = "0";
-            this.txtSoLuong.UnderlinedStyle = false;
-            // 
-            // rjTextBox2
-            // 
-            this.rjTextBox2.BackColor = System.Drawing.Color.White;
-            this.rjTextBox2.BorderColor = System.Drawing.Color.SaddleBrown;
-            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox2.BorderRadius = 20;
-            this.rjTextBox2.BorderSize = 2;
-            this.rjTextBox2.Font = new System.Drawing.Font("Quicksand Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox2.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox2.Location = new System.Drawing.Point(47, 63);
-            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox2.Multiline = false;
-            this.rjTextBox2.Name = "rjTextBox2";
-            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox2.PasswordChar = false;
-            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox2.PlaceholderText = "";
-            this.rjTextBox2.Size = new System.Drawing.Size(179, 39);
-            this.rjTextBox2.TabIndex = 131;
-            this.rjTextBox2.Texts = "";
-            this.rjTextBox2.UnderlinedStyle = false;
             // 
             // lblThanhToan
             // 
@@ -369,6 +287,17 @@
             this.pnlPhieuThu.Size = new System.Drawing.Size(796, 548);
             this.pnlPhieuThu.TabIndex = 2;
             // 
+            // lblNoCu
+            // 
+            this.lblNoCu.AutoSize = true;
+            this.lblNoCu.BackColor = System.Drawing.Color.Transparent;
+            this.lblNoCu.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoCu.Location = new System.Drawing.Point(447, 296);
+            this.lblNoCu.Name = "lblNoCu";
+            this.lblNoCu.Size = new System.Drawing.Size(53, 24);
+            this.lblNoCu.TabIndex = 158;
+            this.lblNoCu.Text = "Nợ cũ";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -390,28 +319,6 @@
             this.lblGiaNuoc.Size = new System.Drawing.Size(82, 25);
             this.lblGiaNuoc.TabIndex = 144;
             this.lblGiaNuoc.Text = "Giá nước";
-            // 
-            // rjTextBox3
-            // 
-            this.rjTextBox3.BackColor = System.Drawing.Color.White;
-            this.rjTextBox3.BorderColor = System.Drawing.Color.SaddleBrown;
-            this.rjTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.rjTextBox3.BorderRadius = 20;
-            this.rjTextBox3.BorderSize = 2;
-            this.rjTextBox3.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjTextBox3.ForeColor = System.Drawing.Color.White;
-            this.rjTextBox3.Location = new System.Drawing.Point(431, 223);
-            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.rjTextBox3.Multiline = false;
-            this.rjTextBox3.Name = "rjTextBox3";
-            this.rjTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.rjTextBox3.PasswordChar = false;
-            this.rjTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.rjTextBox3.PlaceholderText = "";
-            this.rjTextBox3.Size = new System.Drawing.Size(210, 39);
-            this.rjTextBox3.TabIndex = 143;
-            this.rjTextBox3.Texts = "";
-            this.rjTextBox3.UnderlinedStyle = false;
             // 
             // label4
             // 
@@ -435,6 +342,127 @@
             this.lblGiaDien.TabIndex = 141;
             this.lblGiaDien.Text = "Giá điện";
             // 
+            // lblMaPThu
+            // 
+            this.lblMaPThu.AutoSize = true;
+            this.lblMaPThu.BackColor = System.Drawing.Color.Transparent;
+            this.lblMaPThu.Font = new System.Drawing.Font("iCiel Cadena", 30F, System.Drawing.FontStyle.Bold);
+            this.lblMaPThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblMaPThu.Location = new System.Drawing.Point(530, 25);
+            this.lblMaPThu.Name = "lblMaPThu";
+            this.lblMaPThu.Size = new System.Drawing.Size(126, 55);
+            this.lblMaPThu.TabIndex = 139;
+            this.lblMaPThu.Text = "MaPT";
+            this.lblMaPThu.Click += new System.EventHandler(this.lblMaPTro_Click);
+            // 
+            // btnThemCTPT
+            // 
+            this.btnThemCTPT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(193)))), ((int)(((byte)(195)))));
+            this.btnThemCTPT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(193)))), ((int)(((byte)(195)))));
+            this.btnThemCTPT.BorderColor = System.Drawing.Color.White;
+            this.btnThemCTPT.BorderRadius = 20;
+            this.btnThemCTPT.BorderSize = 1;
+            this.btnThemCTPT.FlatAppearance.BorderSize = 0;
+            this.btnThemCTPT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemCTPT.Font = new System.Drawing.Font("Quicksand", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemCTPT.ForeColor = System.Drawing.Color.White;
+            this.btnThemCTPT.Image = ((System.Drawing.Image)(resources.GetObject("btnThemCTPT.Image")));
+            this.btnThemCTPT.Location = new System.Drawing.Point(57, 234);
+            this.btnThemCTPT.Name = "btnThemCTPT";
+            this.btnThemCTPT.Size = new System.Drawing.Size(160, 58);
+            this.btnThemCTPT.TabIndex = 131;
+            this.btnThemCTPT.Text = "THÊM";
+            this.btnThemCTPT.TextColor = System.Drawing.Color.White;
+            this.btnThemCTPT.UseVisualStyleBackColor = false;
+            this.btnThemCTPT.Click += new System.EventHandler(this.btnThemCTPT_Click);
+            // 
+            // txtSoLuong
+            // 
+            this.txtSoLuong.BackColor = System.Drawing.Color.White;
+            this.txtSoLuong.BorderColor = System.Drawing.Color.SaddleBrown;
+            this.txtSoLuong.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtSoLuong.BorderRadius = 20;
+            this.txtSoLuong.BorderSize = 2;
+            this.txtSoLuong.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoLuong.Location = new System.Drawing.Point(47, 162);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSoLuong.Multiline = false;
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtSoLuong.PasswordChar = false;
+            this.txtSoLuong.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtSoLuong.PlaceholderText = "";
+            this.txtSoLuong.Size = new System.Drawing.Size(179, 39);
+            this.txtSoLuong.TabIndex = 133;
+            this.txtSoLuong.Texts = "0";
+            this.txtSoLuong.UnderlinedStyle = false;
+            // 
+            // rjTextBox2
+            // 
+            this.rjTextBox2.BackColor = System.Drawing.Color.White;
+            this.rjTextBox2.BorderColor = System.Drawing.Color.SaddleBrown;
+            this.rjTextBox2.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.rjTextBox2.BorderRadius = 20;
+            this.rjTextBox2.BorderSize = 2;
+            this.rjTextBox2.Font = new System.Drawing.Font("Quicksand Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjTextBox2.ForeColor = System.Drawing.Color.White;
+            this.rjTextBox2.Location = new System.Drawing.Point(47, 63);
+            this.rjTextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox2.Multiline = false;
+            this.rjTextBox2.Name = "rjTextBox2";
+            this.rjTextBox2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox2.PasswordChar = false;
+            this.rjTextBox2.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.rjTextBox2.PlaceholderText = "";
+            this.rjTextBox2.Size = new System.Drawing.Size(179, 39);
+            this.rjTextBox2.TabIndex = 131;
+            this.rjTextBox2.Texts = "";
+            this.rjTextBox2.UnderlinedStyle = false;
+            // 
+            // txtNoCu
+            // 
+            this.txtNoCu.BackColor = System.Drawing.Color.White;
+            this.txtNoCu.BorderColor = System.Drawing.Color.SaddleBrown;
+            this.txtNoCu.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtNoCu.BorderRadius = 20;
+            this.txtNoCu.BorderSize = 2;
+            this.txtNoCu.Font = new System.Drawing.Font("Quicksand Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNoCu.ForeColor = System.Drawing.Color.Black;
+            this.txtNoCu.Location = new System.Drawing.Point(431, 322);
+            this.txtNoCu.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNoCu.Multiline = false;
+            this.txtNoCu.Name = "txtNoCu";
+            this.txtNoCu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNoCu.PasswordChar = false;
+            this.txtNoCu.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNoCu.PlaceholderText = "";
+            this.txtNoCu.Size = new System.Drawing.Size(210, 39);
+            this.txtNoCu.TabIndex = 157;
+            this.txtNoCu.Texts = "";
+            this.txtNoCu.UnderlinedStyle = false;
+            // 
+            // rjTextBox3
+            // 
+            this.rjTextBox3.BackColor = System.Drawing.Color.White;
+            this.rjTextBox3.BorderColor = System.Drawing.Color.SaddleBrown;
+            this.rjTextBox3.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.rjTextBox3.BorderRadius = 20;
+            this.rjTextBox3.BorderSize = 2;
+            this.rjTextBox3.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjTextBox3.ForeColor = System.Drawing.Color.White;
+            this.rjTextBox3.Location = new System.Drawing.Point(431, 223);
+            this.rjTextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.rjTextBox3.Multiline = false;
+            this.rjTextBox3.Name = "rjTextBox3";
+            this.rjTextBox3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.rjTextBox3.PasswordChar = false;
+            this.rjTextBox3.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.rjTextBox3.PlaceholderText = "";
+            this.rjTextBox3.Size = new System.Drawing.Size(210, 39);
+            this.rjTextBox3.TabIndex = 143;
+            this.rjTextBox3.Texts = "";
+            this.rjTextBox3.UnderlinedStyle = false;
+            // 
             // rjTextBox1
             // 
             this.rjTextBox1.BackColor = System.Drawing.Color.White;
@@ -456,19 +484,6 @@
             this.rjTextBox1.TabIndex = 140;
             this.rjTextBox1.Texts = "";
             this.rjTextBox1.UnderlinedStyle = false;
-            // 
-            // lblMaPThu
-            // 
-            this.lblMaPThu.AutoSize = true;
-            this.lblMaPThu.BackColor = System.Drawing.Color.Transparent;
-            this.lblMaPThu.Font = new System.Drawing.Font("iCiel Cadena", 30F, System.Drawing.FontStyle.Bold);
-            this.lblMaPThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.lblMaPThu.Location = new System.Drawing.Point(530, 25);
-            this.lblMaPThu.Name = "lblMaPThu";
-            this.lblMaPThu.Size = new System.Drawing.Size(126, 55);
-            this.lblMaPThu.TabIndex = 139;
-            this.lblMaPThu.Text = "MaPT";
-            this.lblMaPThu.Click += new System.EventHandler(this.lblMaPTro_Click);
             // 
             // txtGiaPhong
             // 
@@ -600,38 +615,23 @@
             this.txtMaPT.Texts = "";
             this.txtMaPT.UnderlinedStyle = false;
             // 
-            // lblNoCu
+            // soLuong
             // 
-            this.lblNoCu.AutoSize = true;
-            this.lblNoCu.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoCu.Font = new System.Drawing.Font("Quicksand", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoCu.Location = new System.Drawing.Point(447, 296);
-            this.lblNoCu.Name = "lblNoCu";
-            this.lblNoCu.Size = new System.Drawing.Size(53, 24);
-            this.lblNoCu.TabIndex = 158;
-            this.lblNoCu.Text = "Nợ cũ";
+            this.soLuong.DataPropertyName = "soLuong";
+            this.soLuong.HeaderText = "Số lượng";
+            this.soLuong.MinimumWidth = 6;
+            this.soLuong.Name = "soLuong";
+            this.soLuong.ReadOnly = true;
+            this.soLuong.Width = 240;
             // 
-            // txtNoCu
+            // maDV
             // 
-            this.txtNoCu.BackColor = System.Drawing.Color.White;
-            this.txtNoCu.BorderColor = System.Drawing.Color.SaddleBrown;
-            this.txtNoCu.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtNoCu.BorderRadius = 20;
-            this.txtNoCu.BorderSize = 2;
-            this.txtNoCu.Font = new System.Drawing.Font("Quicksand Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNoCu.ForeColor = System.Drawing.Color.Black;
-            this.txtNoCu.Location = new System.Drawing.Point(431, 322);
-            this.txtNoCu.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNoCu.Multiline = false;
-            this.txtNoCu.Name = "txtNoCu";
-            this.txtNoCu.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtNoCu.PasswordChar = false;
-            this.txtNoCu.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtNoCu.PlaceholderText = "";
-            this.txtNoCu.Size = new System.Drawing.Size(210, 39);
-            this.txtNoCu.TabIndex = 157;
-            this.txtNoCu.Texts = "";
-            this.txtNoCu.UnderlinedStyle = false;
+            this.maDV.DataPropertyName = "maDV";
+            this.maDV.HeaderText = "Mã dịch vụ";
+            this.maDV.MinimumWidth = 6;
+            this.maDV.Name = "maDV";
+            this.maDV.ReadOnly = true;
+            this.maDV.Width = 210;
             // 
             // frmSuaPThu
             // 
@@ -658,8 +658,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn maDV;
         private System.Windows.Forms.ComboBox cmbMaPT;
         private System.Windows.Forms.DateTimePicker dtpNgayThu;
         private System.Windows.Forms.Label lblChiTiet;
@@ -673,7 +671,6 @@
         private System.Windows.Forms.Label label2;
         private RJControls.RJTextBox txtThanhToan;
         private RJButton btnThoat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
         private RJControls.RJTextBox txtMaPT;
         private System.Windows.Forms.ToolStripMenuItem xoaHangToolStripMenuItem;
         private System.Windows.Forms.Label lblCMND;
@@ -696,5 +693,7 @@
         private RJControls.RJTextBox rjTextBox1;
         private System.Windows.Forms.Label lblNoCu;
         private RJControls.RJTextBox txtNoCu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maDV;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuong;
     }
 }
